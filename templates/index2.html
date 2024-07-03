@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>표 업데이트 버튼 예시</title>
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}"> <!-- 올바른 CSS 파일 연동 -->
+<script>
+function updateTable() {
+    // 표를 생성할 위치를 찾습니다.
+    var tableContainer = document.getElementById('table-container');
+    
+    // 새로운 표 엘리먼트를 생성합니다.
+    var table = document.createElement('table');
+    table.setAttribute('border', '3');
+    
+    // 표의 크기를 조정합니다.
+    table.style.width = '100%'; // 전체 너비의 80%로 설정
+    table.style.height = '100px'; // 높이를 200px로 설정
+    table.style.fontSize = '32px'; // 글자 크기를 16px로 설정
+
+    // 표의 헤더를 추가합니다.
+    var headerRow = document.createElement('tr');
+    var headers = ['도착시간', '주소'];
+    for (var i = 0; i < headers.length; i++) {
+        var headerCell = document.createElement('td');
+        headerCell.textContent = headers[i];
+        headerRow.appendChild(headerCell);
+    }
+    table.appendChild(headerRow);
+
+     // 서버에서 데이터 가져오기
+    fetch('https://mobleqr.iptime.org:443/update')
+    .then(response => response.json())
+    .then(data => {
+        // 데이터를 표에 추가합니다.
+        data.forEach(item => {
+            var row = document.createElement('tr');
+            for (var key in item) {
+                var cell = document.createElement('td');
+                cell.textContent = item[key];
+                row.appendChild(cell);
+            }
+            table.appendChild(row);
+        });
+    })
+    .catch(error => console.error('Error fetching data:', error));
+
+    // 기존의 표를 삭제하고 새로운 표를 삽입합니다.
+    tableContainer.innerHTML = ''; // 기존의 내용 삭제
+    tableContainer.appendChild(table);
+}
+
+
+</script>
+</head>
+<body>
+    <p>
+        <span class="bubbles">🫧</span>
+    </p>
+<h2>표 업데이트 예시</h2>
+
+<!-- 업데이트할 표를 보여줄 요소 -->
+<div id="table-container"></div>
+
+<!-- 업데이트 버튼 -->
+<!-- <button onclick="updateTable()">표 업데이트</button> -->
+<button onclick="updateTable()">표 업데이트</button>
+</body>
+</html>

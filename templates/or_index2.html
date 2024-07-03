@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello Flask</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <h1>
+    {% for item in message %}
+        {{ item }}<br>
+    {% endfor %}
+    </h1>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>업데이트 버튼 예시</title>
+<script>
+// JavaScript 함수 정의
+function updateContent() {
+    // 예시: id가 'content'인 요소의 내용을 업데이트합니다.
+    document.getElementById('message').innerHTML = '내용이 업데이트 되었습니다!';
+     // 페이지를 새로고침합니다.
+    location.reload();
+}
+</script>
+</head>
+<body>
+
+<h2>현재 위치 출력</h2>
+
+<!-- 업데이트할 내용을 보여줄 요소 -->
+<div id="message">현재 위치를 조회하시려면 업데이트 버튼을 눌러주세요.</div>
+
+<!-- 업데이트 버튼 -->
+<button onclick="updateContent()">업데이트</button>
+
+</body>
+</html>

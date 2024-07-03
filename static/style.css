@@ -1,0 +1,123 @@
+/* style.css 파일 */
+body {
+	height: 100vh;
+	margin: 0;
+	display: grid;
+	place-items: center;
+	background: linear-gradient(
+		426deg,
+		rgba(222, 191, 244, 1) 0%,
+		rgba(255, 178, 178, 1) 50%,
+		rgba(255, 215, 158, 1) 100%
+	);
+}
+.bubbles {
+	font-size: 12rem;
+	margin: auto;
+}
+h1, h2 {
+    text-align: center;
+}
+#message {
+    border: 2px solid #acff4e;
+    padding: 20px;
+    margin: 10px auto; /* 가운데 정렬을 위해 auto 사용 */
+    width: 80%; /* or 특정 px 값 */
+	background: linear-gradient(
+		426deg,
+		rgb(221, 244, 191) 0%,
+		rgb(241, 255, 178) 50%,
+		rgb(255, 232, 158) 100%
+    );
+    text-align: center;
+}
+button {
+	background: linear-gradient(
+		426deg,
+		rgba(222, 191, 244, 1) 0%,
+		rgba(255, 178, 178, 1) 50%,
+		rgba(255, 215, 158, 1) 100%
+    );
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: 2px solid #edff4e;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.button-container {
+    text-align: center; /* 버튼을 가운데로 정렬 */
+}
+button:hover {
+    background-color: #b1ff20;
+}/* style.css 파일 */
+body {
+	height: 100vh;
+	margin: 0;
+	display: grid;
+	place-items: center;
+	background: linear-gradient(
+		426deg,
+		rgba(222, 191, 244, 1) 0%,
+		rgba(255, 178, 178, 1) 50%,
+		rgba(255, 215, 158, 1) 100%
+	);
+}
+
+.bubbles {
+	font-size: 12rem;
+	margin: auto;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#message {
+    border: 2px solid #acff4e;
+    padding: 20px;
+    margin: 10px auto; /* 가운데 정렬을 위해 auto 사용 */
+    width: 80%; /* or 특정 px 값 */
+	background: linear-gradient(
+		426deg,
+		rgb(221, 244, 191) 0%,
+		rgb(241, 255, 178) 50%,
+		rgb(255, 232, 158) 100%
+    );
+    text-align: center;
+}
+
+button {
+	background: linear-gradient(
+		426deg,
+		rgba(222, 191, 244, 1) 0%,
+		rgba(255, 178, 178, 1) 50%,
+		rgba(255, 215, 158, 1) 100%
+    );
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: 2px solid #edff4e;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* 기존 style.css 파일에 추가 */
+.button-container {
+    text-align: center; /* 버튼을 가운데로 정렬 */
+}
+
+button:hover {
+    background-color: #b1ff20;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: separate;
+	background: linear-gradient(
+		426deg,
+		rgba(222, 191, 244, 1) 0%,
+		rgba(255, 178, 178, 1) 50%,
+		rgba(255, 215, 158, 1) 100%
+	)
+}
