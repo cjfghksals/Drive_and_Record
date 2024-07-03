@@ -20,21 +20,21 @@
 
 - OpenSSL 인증서를 발급합니다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/cf5adbe4-4243-4b97-9bb3-82d137fe5dc4/311094f3-ecc7-4c11-923e-9324aa038bae/Untitled.png)
+![ssl](https://github.com/cjfghksals/hamster_detector_v3/assets/95117186/431637f7-82e0-43f2-8595-257a75e9f28a)
 
 - 포트포워딩 및 DDNS설정
     
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/cf5adbe4-4243-4b97-9bb3-82d137fe5dc4/0557bd07-912c-4c77-88ff-454666b556db/Untitled.png)
+![포트포워딩](https://github.com/cjfghksals/hamster_detector_v3/assets/95117186/b892ad44-bbb7-419a-ba82-603544c7e6a0)
     
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/cf5adbe4-4243-4b97-9bb3-82d137fe5dc4/3b110bbd-a140-40c2-8ed4-88090a4cadf6/Untitled.png)
+![ddns](https://github.com/cjfghksals/hamster_detector_v3/assets/95117186/2e206031-0ff1-40b1-8caa-f9f411c55475)
     
 - MySQL에 운행 기록 데이터를 저장합니다.
     
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/cf5adbe4-4243-4b97-9bb3-82d137fe5dc4/400d7519-3fdc-4674-b9d6-72835f129205/Untitled.png)
+![mysql](https://github.com/cjfghksals/hamster_detector_v3/assets/95117186/5f3b0366-4b47-451c-ba5e-3d371b44e48a)
     
 
 ---
 
 ### ✿ 결과
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/cf5adbe4-4243-4b97-9bb3-82d137fe5dc4/f1248a76-2cff-4030-b604-4f861cd556b4/2fb93b90-461d-4781-9a8f-b19b108d7e05.png)
+![Untitled](https://github.com/cjfghksals/hamster_detector_v3/assets/95117186/d48fc2b0-4633-433b-92b0-b92f72b29342)
